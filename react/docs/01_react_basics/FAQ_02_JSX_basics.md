@@ -3,7 +3,7 @@
 * [ What happens behind the scene with `JSX` components?](#what-happens-behind-the-scene-with-jsx-components)
 * [`JSX` naming conventions](#jsx-naming-conventions)
 * [Nested structure of html elements created via `React.createElement`](#nested-structure-of-html-elements-created-via-reactcreateelement)
-* [`JSX` element, passing css class name and value](#jsx-element-passing-css-class-name-and-value)
+* [`JSX` element, passing css class name and value via `React.createElement`](#jsx-element-passing-css-class-name-and-value-via-reactcreateelement)
 * [Composing of `JSX` components](#composing-of-jsx-components)
 * [Requirements to `JSX` components](#requirements-to-jsx-components)
 * [Returning JS array](#returning-js-array)
@@ -104,7 +104,7 @@ React.createElement('div', {},
     React.createElement('div', {}, 'Child2_child')));
 ```
 
-### `JSX` element, passing css class name and value
+### `JSX` element, passing css class name and value via `React.createElement`
 
 To get:
 ```jsx
@@ -457,7 +457,7 @@ Output ignores new line symbol:
 ```qute
 Newline Test
 ```
-7. d
+7. Code snippet:
 ```text
 function hello() {
   return (

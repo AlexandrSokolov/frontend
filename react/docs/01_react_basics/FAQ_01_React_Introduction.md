@@ -75,6 +75,6 @@ ReactDOM.render(
   document.querySelector('#root'));
 ```
 
-#### Location of main html page
+### Location of main html page
 
 [`public/index.html`](../../my-react-app/public/index.html)
