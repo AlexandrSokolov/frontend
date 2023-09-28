@@ -1,3 +1,50 @@
+### [Hooks FAQ](https://legacy.reactjs.org/docs/hooks-faq.html)
+
+### [Functional updates](https://legacy.reactjs.org/docs/hooks-reference.html#functional-updates)
+
+### [React useState(0) vs useState( () => 0 )](https://stackoverflow.com/questions/72585007/react-usestate0-vs-usestate-0)
+
+### How do lifecycle methods correspond to Hooks?
+
+* constructor: Function components don’t need a constructor. You can initialize the state in the useState call. If computing the initial state is expensive, you can pass a function to useState.
+* getDerivedStateFromProps: Schedule an update while rendering instead.
+* shouldComponentUpdate: See React.memo below.
+* render: This is the function component body itself.
+* componentDidMount, componentDidUpdate, componentWillUnmount: The useEffect Hook can express all combinations of these (including less common cases).
+* getSnapshotBeforeUpdate, componentDidCatch and getDerivedStateFromError: There are no Hook equivalents for these methods yet, but they will be added soon.
+
+https://legacy.reactjs.org/docs/hooks-faq.html#can-i-skip-an-effect-on-updates
+
+https://legacy.reactjs.org/docs/hooks-faq.html#can-i-run-an-effect-only-on-updates
+
+### How can I do data fetching with Hooks?
+
+https://legacy.reactjs.org/docs/hooks-faq.html#do-hooks-cover-all-use-cases-for-classes
+
+### Can I run an effect only on updates?
+
+https://legacy.reactjs.org/docs/hooks-faq.html#can-i-run-an-effect-only-on-updates
+
+This is a rare use case. If you need it, you can use a mutable ref to manually store a boolean value corresponding to whether you are on the first or a subsequent render, then check that flag in your effect. (If you find yourself doing this often, you could create a custom Hook for it.)
+
+### How to get the previous props or state?
+
+https://legacy.reactjs.org/docs/hooks-faq.html#how-to-get-the-previous-props-or-state
+
+### Why am I seeing stale props or state inside my function?
+
+https://legacy.reactjs.org/docs/hooks-faq.html#why-am-i-seeing-stale-props-or-state-inside-my-function
+
+### Is there something like instance variables?
+
+https://legacy.reactjs.org/docs/hooks-faq.html#is-there-something-like-instance-variables
+
+### [A guide to choosing the right React state management solution](https://blog.logrocket.com/guide-choosing-right-react-state-management-solution/)
+
+###
+
+https://stackoverflow.com/questions/54625831/how-to-sync-props-to-state-using-react-hooks-setstate
+
 ### Customization via children
 
 More examples, extract into a separate file as demo, it must not be in FAQ
@@ -7,6 +54,15 @@ More examples, extract into a separate file as demo, it must not be in FAQ
 Create demo, extract from FAQ
 
 More examples, extract into a separate file as demo, it must not be in FAQ
+
+### todo practice
+
+counter with parent/child to describe how state functions
+
+### react hooks motiviation and the related issues
+
+https://medium.com/@dan_abramov/making-sense-of-react-hooks-fdbde8803889
+[Building Your Own Hooks](https://legacy.reactjs.org/docs/hooks-custom.html)
 
 ### running commands in parallel
 
