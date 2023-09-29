@@ -45,6 +45,14 @@ https://legacy.reactjs.org/docs/hooks-faq.html#is-there-something-like-instance-
 
 https://stackoverflow.com/questions/54625831/how-to-sync-props-to-state-using-react-hooks-setstate
 
+### hooks api
+
+https://blog.logrocket.com/react-reference-guide-hooks-api/
+
+### 
+
+https://blog.logrocket.com/react-hooks-cheat-sheet-solutions-common-problems/
+
 ### Customization via children
 
 More examples, extract into a separate file as demo, it must not be in FAQ
@@ -76,6 +84,17 @@ npm install
 
 -O, --save-optional: Package will appear in your optionalDependencies.
 
+### useState vs. useEffect
+
+https://blog.logrocket.com/guide-usestate-react/
+https://legacy.reactjs.org/docs/hooks-rules.html#explanation
+
+### Understanding the useReducer Hook
+
+https://blog.logrocket.com/guide-usestate-react/
+
+### ESLint Plugin
+https://legacy.reactjs.org/docs/hooks-rules.html#eslint-plugin
 
 #### state updae via `React.useState`
 
@@ -158,4 +177,51 @@ Run `npm audit` for details.
 
 9408  npm install @mui/material @emotion/react @emotion/styled --legacy-peer-deps
 
-#### 
+####  hooks
+
+https://react.dev/reference/react
+
+### form
+
+function NewsletterSignup() {
+  const [email, setEmail] = useState('');
+  const [agreed, setAgreed] = useState(false);
+  function updateEmailHandler(event) {
+    // could add email validation here
+    setEmail(event.target.value);
+  };
+  function updateAgreementHandler(event) {
+    setAgreed(event.target.checked); // checked is a default JS boolean
+property
+  };
+  function signupHandler(event) {
+    event.preventDefault(); // prevent browser default of sending a Http
+request
+    const userData = {userEmail: email, userAgrees: agreed};
+    // doWhateverYouWant(userData);
+  };
+  return (
+    <form onSubmit={signupHandler}>
+      <div>
+        <label htmlFor="email">Your email</label>
+        <input type="email" id="email" onChange={updateEmailHandler}/>
+      </div>
+      <div>
+        <input type="checkbox" id="agree"
+onChange={updateAgreementHandler}/>
+        <label htmlFor="agree">Agree to terms and conditions</label>
+      </div>
+    </form>
+  );
+};
+
+> In the preceding code example, you might've noticed a new prop that
+> wasn't used before in this book: htmlFor . This is a special prop, built into
+> React and the core JSX elements it provides. It can be added to <label>
+> elements in order to set the for attribute for these elements. The reason
+> it is called htmlFor instead of just for is that, as explained earlier in the
+> book, JSX looks like HTML but isn't HTML. It's JavaScript under the hood.
+> And in JavaScript, for is a reserved keyword for for loops. To avoid
+> problems, the prop is therefore named htmlFor .
+
+####
