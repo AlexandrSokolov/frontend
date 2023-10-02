@@ -1,4 +1,16 @@
 
+* [The motivation to use `state`, the workflow.](#the-motivation-to-use-state-the-workflow)
+* [Which `React` elements can and cannot have `state`?](#which-react-elements-can-and-cannot-have-state)
+* [Class component definition in `React`](#class-component-definition-in-react)
+* [Define `state` and access it in a class component](#define-state-and-access-it-in-a-class-component)
+* [What happens when `this.setState` is invoked?](#what-happens-when-thissetstate-is-invoked)
+* [`state` update via `setState`, options](#state-update-via-setstate-options)
+* [ES6 shorthand to update state](#es6-shorthand-to-update-state)
+* [Update a single attribute of a multi-attributes state in a class component](#update-a-single-attribute-of-a-multi-attributes-state-in-a-class-component)
+* [What to/not to Put in State in a class component](#what-tonot-to-put-in-state-in-a-class-component)
+* [Where to Keep State in a class component](#where-to-keep-state-in-a-class-component)
+* [Describe the following code](#describe-the-following-code)
+
 ### The motivation to use `state`, the workflow.
 
 `props` are used to pass data to components. But `props` are read-only.
@@ -86,7 +98,7 @@ class CountingParent extends React.Component {
 The `setState` function is invoked asynchronously. 
 It will update the state and then re-render the component and all of its children.
 
-#### `state` update via `setState`, options
+### `state` update via `setState`, options
 
 * if you don't need to access the changed state in the same method:
   ```jsx
@@ -141,7 +153,7 @@ class NoNumbersInput extends React.Component {
 A little side note – that syntax `this.setState({ text })` is just ES6 shorthand for `this.setState({ text: text })`. 
 With ES6, if the key is the same as the variable name, you don’t have to write it twice.
 
-### Update a single attribute of a multi-attributes state in a class component and stateless function.
+### Update a single attribute of a multi-attributes state in a class component
 
 1. Setting state in a class function via `setState` **doesn't erase the existing state.**
 
@@ -215,7 +227,7 @@ stateless components without logic.
 
 ### TODO Thinking Declaratively (from `Pure React`)
 
-### Describe the following code:
+### Describe the following code
 
 1. Code snippet:
 ```jsx

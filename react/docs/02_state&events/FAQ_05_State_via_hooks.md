@@ -1,6 +1,21 @@
-### Using hooks in class components
 
-You can’t use Hooks inside a class component.
+* [The motivation to have hooks](#the-motivation-to-have-hooks)
+* [Rules for using `useState`](#rules-for-using-usestate)
+* [What can I do with Hooks that I couldn’t with classes?](#what-can-i-do-with-hooks-that-i-couldnt-with-classes)
+* [Using hooks in class components](#using-hooks-in-class-components)
+* [Define `state` and access it a stateless function via hooks](#define-state-and-access-it-a-stateless-function-via-hooks)
+* [Lazily initialize the state, describe when it gets triggered](#lazily-initialize-the-state-describe-when-it-gets-triggered)
+* [why does useState return an array, rather than an object?](#why-does-usestate-return-an-array-rather-than-an-object)
+* [Using several state variables with hooks, alternative and recommendation](#using-several-state-variables-with-hooks-alternative-and-recommendation)
+* [What must you care about when update state with hooks (6)?](#what-must-you-care-about-when-update-state-with-hooks-6)
+* [Reading the state variable after calling the set function](#reading-the-state-variable-after-calling-the-set-function)
+* [Several updates, possible issue](#several-updates-possible-issue)
+* [Functional updates](#functional-updates)
+* [Update a single attribute of a multi-attributes state in a stateless function](#update-a-single-attribute-of-a-multi-attributes-state-in-a-stateless-function)
+* [Updating arrays with hooks](#updating-arrays-with-hooks)
+* [Update state in a nested object in React with Hooks](#update-state-in-a-nested-object-in-react-with-hooks)
+* [How can state be shared across multiple components?](#how-can-state-be-shared-across-multiple-components)
+* [Describe the following code](#describe-the-following-code)
 
 ### The motivation to have hooks
 
@@ -33,7 +48,7 @@ You can’t use Hooks inside a class component.
 Hooks let you always use functions instead of having to constantly switch between
 functions, classes, higher-order components, and render props.
 
-### Rules for using useState
+### Rules for using `useState`
 
 [Rules of Hooks](https://legacy.reactjs.org/docs/hooks-rules.html)
 * Only call Hooks at the top level. (Don’t call Hooks inside loops, conditions, or nested functions.)
@@ -45,6 +60,10 @@ functions, classes, higher-order components, and render props.
 ### What can I do with Hooks that I couldn’t with classes?
 
 > [Our goal is for Hooks to cover all use cases for classes as soon as possible.](https://legacy.reactjs.org/docs/hooks-faq.html#do-hooks-cover-all-use-cases-for-classes)
+
+### Using hooks in class components
+
+You can’t use Hooks inside a class component.
 
 ### Define `state` and access it a stateless function via hooks
 
@@ -98,7 +117,7 @@ const { state: message, setState: setMessage } = useState( '' );
 const { state: list, setState: setList } = useState( [] );
 ```
 
-### Using several state variables with hooks
+### Using several state variables with hooks, alternative and recommendation
 
 1. You might be tempted to always call `useState()` once and put all state into a single object:
 
@@ -139,7 +158,7 @@ Note: avoid state objects with a complex structure (nested objects), cause to up
 If this is not possible, the recommendation is to use libraries that help you work with immutable objects, 
 such as [`immutable.js` or `immer`](https://blog.logrocket.com/immer-and-immutable-js-how-do-they-compare/).
 
-### What must you care about when update state with hooks?
+### What must you care about when update state with hooks (6)?
 
 * [The update function doesn’t update the value right away.](#reading-the-state-variable-after-calling-the-set-function)
 * [React batches state updates.](#several-updates-possible-issue)
@@ -196,7 +215,7 @@ function Counter({initialCount}) {
 
 [Functional updates](https://legacy.reactjs.org/docs/hooks-reference.html#functional-updates)
 
-### Update a single attribute of a multi-attributes state in a stateless function.
+### Update a single attribute of a multi-attributes state in a stateless function
 
 Setting state via hooks replaces its value. This is different from `this.setState` in a class,
 which merges the updated fields into the object.
