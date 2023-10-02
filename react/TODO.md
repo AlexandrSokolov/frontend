@@ -1,3 +1,21 @@
+### https://blog.logrocket.com/guide-usestate-react/#usestate-vs-useeffect
+### https://react.dev/reference/react/useEffect
+### https://overreacted.io/a-complete-guide-to-useeffect/
+### https://blog.logrocket.com/react-hooks-cheat-sheet-solutions-common-problems/
+### https://betterprogramming.pub/understanding-the-useeffect-dependency-array-2913da504c44
+### https://legacy.reactjs.org/docs/hooks-intro.html
+### https://legacy.reactjs.org/docs/hooks-faq.html
+### https://blog.logrocket.com/solve-react-useeffect-hook-infinite-loop-patterns/
+### https://blog.logrocket.com/react-useeffect-vs-uselayouteffect-hooks-examples/
+### https://blog.logrocket.com/understanding-react-useeffect-cleanup-function/
+### https://react.dev/learn/synchronizing-with-effects
+### https://react.dev/learn/you-might-not-need-an-effect
+### https://react.dev/learn/separating-events-from-effects
+### https://react.dev/learn/lifecycle-of-reactive-effects
+### https://react.dev/learn/removing-effect-dependencies
+### https://react.dev/learn/reusing-logic-with-custom-hooks
+### https://blog.logrocket.com/using-react-useeffect-hook-lifecycle-methods/
+
 ### [Hooks FAQ](https://legacy.reactjs.org/docs/hooks-faq.html)
 
 ### [Functional updates](https://legacy.reactjs.org/docs/hooks-reference.html#functional-updates)
@@ -224,4 +242,39 @@ onChange={updateAgreementHandler}/>
 > And in JavaScript, for is a reserved keyword for for loops. To avoid
 > problems, the prop is therefore named htmlFor .
 
+### Execute an effect only once when a certain condition is met
+
+https://blog.logrocket.com/useeffect-hook-complete-guide/
+
+### Access data from previous renders
+
+https://blog.logrocket.com/useeffect-hook-complete-guide/
+
+### Additional thoughts on functions used inside of effects
+
+https://blog.logrocket.com/useeffect-hook-complete-guide/
+
+
+### Using async functions inside of useEffect
+
+https://blog.logrocket.com/useeffect-hook-complete-guide/
+
+### Unit testing of effects
+https://blog.logrocket.com/useeffect-hook-complete-guide/
+
 ####
+
+More on prop changes and using the useCallback Hook
+React.memo
+
+https://blog.logrocket.com/useeffect-hook-complete-guide/
+
+### useCallback with useContext
+
+### custom hooks
+
+useEffect inside of custom Hooks
+https://blog.logrocket.com/useeffect-hook-complete-guide/
+https://blog.logrocket.com/react-custom-hooks-and-the-death-of-render-props-a0ce5cba387f/
+
+
