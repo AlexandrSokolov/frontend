@@ -12,11 +12,11 @@ function Users() {
     <div className="users">
       <div>Users</div>
       {users && users.map(user =>
-        <div key={user.id}>
+        <li key={user.id}>
           <span>id: </span><span>{user.id} </span>
           <span>name: </span><span>{user.name} </span>
           <span>age: </span><span>{user.age} </span>
-        </div>
+        </li>
       )}
     </div>
   )

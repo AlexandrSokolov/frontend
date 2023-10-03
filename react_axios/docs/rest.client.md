@@ -2,6 +2,8 @@ The default rest client is responsible for:
 
 * [Control url redirection for prod and test environment](#control-url-redirection-for-prod-and-test-environment)
 * [Set default error handler TODO]
+* [For computing duration]()
+* [Verify whether the access token for making the API call has expired]
 
 See the component and its usage:
 * [`restClient.js`](../react-axios-app/src/rest/restClient.js)
@@ -54,3 +56,26 @@ const axiosClient = axios.create({
 
 export default axiosClient;
 ```
+
+### Error handling
+
+Common logic
+Check for HTTP status, headers, and specific fields in the response to detect error conditions and trigger error handling logic.
+
+Request-specific error handling
+[Handling Errors in Axios](https://reflectoring.io/tutorial-guide-axios/)
+
+### Computing duration
+
+[Intercepting Requests and Responses](https://reflectoring.io/tutorial-guide-axios/)
+
+### Verify whether the access token for making the API call has expired
+
+TODO
+Verify whether the access token for making the API call has expired in the request interceptor. If the token has expired, fetch a new token with the refresh token.
+
+###
+
+Attach specific headers required by the API to the request in the request interceptor. For example, add the Authorization header to every API call.
+
+### 

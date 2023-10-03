@@ -17,11 +17,11 @@ function Products() {
     <div className="products">
       <div>Products</div>
       {products && products.map(product =>
-        <div key={product.id}>
+        <li key={product.id}>
           <span>id: </span><span>{product.id} </span>
           <span>name: </span><span>{product.name} </span>
           <span>price: </span><span>{product.price} </span>
-        </div>
+        </li>
       )}
     </div>
   )

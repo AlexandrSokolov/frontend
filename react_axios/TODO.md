@@ -1,9 +1,16 @@
+* post method, update product after adding a new one without refresh
+* delete
+  * with listener https://www.digitalocean.com/community/tutorials/react-axios-react
+  * 
+* [Cancelling Initiated Requests](https://reflectoring.io/tutorial-guide-axios/)
+* Using Axios in TypeScript
+[Using Axios in TypeScript](https://reflectoring.io/tutorial-guide-axios/)
+
 * ### use-axios-client
 
 [How to Create a Custom useAxios Hook](https://www.freecodecamp.org/news/how-to-use-axios-with-react/#how-to-create-a-custom-useaxios-hook)
 
-* [How To Use Axios with React](https://www.digitalocean.com/community/tutorials/react-axios-react)
-* [Complete Guide to Axios HTTP Client](https://reflectoring.io/tutorial-guide-axios/)
+Now:
 * [ReactJS Tutorial: How to fetch data with Axios and display it](https://blog.devgenius.io/reactjs-tutorial-how-to-fetch-data-with-axios-and-display-it-b288321cfc07)
 * [ReactJS Axios GET, POST, PUT and DELETE Example Tutorial](https://www.javaguides.net/2020/08/reactjs-axios-get-post-put-and-delete-example-tutorial.html)
 * [The Complete Guide to Use Axios With React](https://www.innuy.com/blog/axios-react/)

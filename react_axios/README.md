@@ -2,10 +2,14 @@
 * [What must you think about when implement rest requests?](#what-must-you-think-about-when-implement-rest-requests)
 * [Axios vs its alternatives](#axios-vs-its-alternatives)
 * [How to structure code with rest calls?](#how-to-structure-code-with-rest-calls)
+* [Sync vs async requst](#sync-or-async-request)
+* [Send request using hooks vs listeners](#send-request-using-hooks-vs-listeners)
+* [Error response handling](#error-response-handling)
+
 * [The required packages installation](docs/packages.installation.md)
 * [Testing rest calls](docs/testing.with.json-server.md)
 * [Default rest client](docs/rest.client.md)
-* [Display results of `get` requests in a component](#display-results-of-get-requests-in-a-component)
+* [Http requests](docs/http.methods.md)
 
 ### What must you think about when implement rest requests?
 
@@ -82,9 +86,9 @@ Too sophisticated and too large for small apps. Fetch is native to Javascript, A
 
          If rest-specific logic gets more complicated, you could extract it from a component into a separate file.
 
-
-
 ### Sync or Async request
+
+TODO https://www.digitalocean.com/community/tutorials/react-axios-react#step-6-using-async-and-await
 
 the Async-Await Syntax
 ```jsx
@@ -144,6 +148,14 @@ Note that the getPost function is called immediately after being created.
 Additionally, the deletePost function is now async, which is a requirement to use the await keyword which resolves the promise it returns (every Axios method returns a promise to resolve).
 
 After using the await keyword with the DELETE request, the user is alerted that the post was deleted, and the post is set to null.
+
+### Send request using hooks vs listeners
+
+todo 
+
+Examples:
+* [with hooks, recommended way](react-axios-app/src/components/products/Products.js)
+* [with listeners, outdated way](react-axios-app/src/components/products/ProductsWithListener.js)
 
 ### Error response handling
 
