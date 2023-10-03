@@ -1,3 +1,9 @@
+### create list componnt
+  `key` attribute issue
+  export, default export
+  why we need index.js file
+  unit test with gist
+  its usage
 ### https://blog.logrocket.com/guide-usestate-react/#usestate-vs-useeffect
 ### https://react.dev/reference/react/useEffect
 ### https://overreacted.io/a-complete-guide-to-useeffect/
