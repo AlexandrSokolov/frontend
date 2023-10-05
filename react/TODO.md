@@ -1,3 +1,10 @@
+###
+https://dev.to/danywalls/how-to-run-multiple-npm-scripts-with-npm-run-all-3ad2
+https://stackoverflow.com/questions/30950032/how-can-i-run-multiple-npm-scripts-in-parallel
+https://www.npmjs.com/package/concurrently
+https://npm.io/package/npm-run-all
+https://github.com/mysticatea/npm-run-all/blob/HEAD/docs/npm-run-all.md
+
 ### create list componnt
   `key` attribute issue
   export, default export
@@ -21,6 +28,10 @@
 ### https://react.dev/learn/removing-effect-dependencies
 ### https://react.dev/learn/reusing-logic-with-custom-hooks
 ### https://blog.logrocket.com/using-react-useeffect-hook-lifecycle-methods/
+### https://legacy.reactjs.org/docs/hooks-effect.html
+### https://reflectoring.io/build-responsive-web-apps-with-springboot-and-react-tutorial/
+### https://developer.okta.com/blog/2022/06/17/simple-crud-react-and-spring-boot
+### https://www.javaguides.net/2021/07/react-js-react-hooks-spring-boot.html
 
 ### [Hooks FAQ](https://legacy.reactjs.org/docs/hooks-faq.html)
 
@@ -284,3 +295,10 @@ https://blog.logrocket.com/useeffect-hook-complete-guide/
 https://blog.logrocket.com/react-custom-hooks-and-the-death-of-render-props-a0ce5cba387f/
 
 
+https://dev.to/matthewpalmer9/componentdidmount-vs-useeffect-2388
+https://www.codinn.dev/articles/react-componentdidmount-equivalent-useeffect-hooks-in-functional-component
+https://singhprince0088.medium.com/useeffect-vs-component-lifecycle-methods-e1ce3eaa63b8
+https://stackoverflow.com/questions/57355814/what-is-difference-between-lifecycle-method-and-useeffect-hook
+https://stackoverflow.com/questions/68926536/why-should-we-use-useeffect-or-componentdidmount-in-react
+https://www.codemzy.com/blog/how-to-use-react-useeffect-like-componentdidmount
+https://reacttraining.com/blog/useEffect-is-not-the-new-componentDidMount
